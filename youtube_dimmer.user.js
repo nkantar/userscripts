@@ -2,9 +2,10 @@
 // @name       YouTube Dimmer
 // @namespace  youtube_dimmer
 // @include http://*.youtube.com/watch?v=*
-// @version    1.1
-// @description  This script dims the page of a YouTube video, while keeping the video bright. It also provides a switch.
+// @version    1.2
+// @description  Dims the page of a YouTube video, while keeping the video bright. It also provides a toggle.
 // @copyright  2013+, Nikola Kantar, nkantar.com
+// @require http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
 
 
@@ -12,8 +13,9 @@
 // player //
 
 document.getElementById("movie_player").style.zIndex = "200";
-document.getElementById("player").className += " watch-playlist-collapsed";
-//document.getElementById("player").className += " watch-medium"; // TODO: fix
+$("#player").attr("class", "watch-playlist-collapsed watch-medium");
+// document.getElementById("player").className += " watch-playlist-collapsed"; // TODO: uncomment when resizing is resolved
+// document.getElementById("player").className += " watch-large"; // TODO: fix
 
 
 /////////
