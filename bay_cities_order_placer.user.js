@@ -16,7 +16,7 @@ var email = '';
 
 // create new order item
 newItem = new Object();
-newItem.clientName = "Nikola Kantar";
+newItem.clientName = name;
 newItem.condimArray = new Array();
 newItem.condimArray[0] = false;
 newItem.condimArray[1] = false;
